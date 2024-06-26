@@ -23,11 +23,11 @@ use App\Http\Controllers\AdminController;
 Route::get('/', [CustomerController::class, 'CustomerIndex'])->name('customer.index');
 Route::get('/products', [CustomerController::class, 'CustomerProduct'])->name('customer.product');
 
-// Route::get('/products/details/{id}', [CustomerController::class, 'Customerdetials'])->name('customer.product.detials');
+Route::get('/products/details/{id}', [CustomerController::class, 'Customerdetials'])->name('customer.product.detials');
 
-// Route::get('/about-us', [CustomerController::class, 'CustomerAbout'])->name('customer.about');
-// Route::get('/contact', [CustomerController::class, 'CustomerContact'])->name('customer.contact');
-// Route::get('/cart', [CustomerController::class, 'CustomerCart'])->name('customer.cart');
+Route::get('/about-us', [CustomerController::class, 'CustomerAbout'])->name('customer.about');
+Route::get('/contact', [CustomerController::class, 'CustomerContact'])->name('customer.contact');
+Route::get('/cart', [CustomerController::class, 'CustomerCart'])->name('customer.cart');
 
 
 

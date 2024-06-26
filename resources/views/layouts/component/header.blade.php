@@ -1,5 +1,5 @@
 <!--header section start-->
-<header class="primary-header primary-header--fixed gheader z-2 w-100">
+<header class="gheader position-relative z-2 header-sticky">
     <div class="ghead-topbar bg-primary d-none d-lg-block">
         <div class="container">
             <div class="row align-items-center">
@@ -26,7 +26,7 @@
                         </li>
                         <li class="nav-item">
                             <span class="me-1">
-                                <svg width="12" height="17" viewBox="0 0 12 17" fill=""
+                                <svg width="12" height="17" viewBox="0 0 12 17" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M6.00011 8.16427C7.44543 8.16427 8.62131 6.98781 8.62131 5.54175C8.62131 4.09569 7.44543 2.91925 6.00011 2.91925C4.55478 2.91925 3.37891 4.09569 3.37891 5.54175C3.37891 6.98781 4.55478 8.16427 6.00011 8.16427ZM6.00011 3.85662C6.92883 3.85662 7.68441 4.61259 7.68441 5.54175C7.68441 6.47093 6.92886 7.2269 6.00011 7.2269C5.07136 7.2269 4.31581 6.47093 4.31581 5.54175C4.31581 4.61259 5.07139 3.85662 6.00011 3.85662Z"
@@ -60,15 +60,15 @@
         <div class="gshop-navbar bg-white rounded ps-lg-5 position-relative">
             <div class="row align-items-center">
                 <div class="col-xxl-2 col-xl-3 col-md-3 col-5">
-                    <a href="#" class="logo"><img src="{{ asset('backend/assets/images/logo.png') }}" alt="logo"
-                            class="img-fluid"></a>
+                    <a href="#" class="logo"><img src="{{ asset('backend/assets/images/logo.png') }}"
+                            alt="logo" class="img-fluid"></a>
                 </div>
                 <div class="col-xxl-10 col-xl-9 col-md-9 col-7">
                     <div class="gshop-navbar-right d-flex align-items-center justify-content-end position-relative">
                         <div class="category-dropdown position-relative d-none d-md-inline-block">
                             <a href="javascript:void(0)"
                                 class="category-dropdown-btn fw-bold d-none d-sm-inline-block">Browse Category
-                                <svg width="12" height="17" xmlns="http://www.w3.org/2000/svg" fill="#001141"
+                                <svg width="12" height="17" xmlns="http://www.w3.org/2000/svg" fill="#6EB356"
                                     viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                                     <path
                                         d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />

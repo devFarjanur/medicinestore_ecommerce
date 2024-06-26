@@ -1172,7 +1172,6 @@ small,
     --text-clr: hsl(var(--light-clr))
 }
 
-
 .button-effect--dark {
     --fill-clr: hsl(var(--dark-clr));
     --text-clr: hsl(var(--light-clr))
@@ -13756,15 +13755,15 @@ sup {
 }
 
 a {
-    color: #001141;
-    -webkit-text-decoration: #001141;
-    text-decoration: #001141
+    color: var(--bs-link-color);
+    -webkit-text-decoration: #6eb356;
+    text-decoration: #6eb356
 }
 
 a:hover {
-    color: #001141;
-    -webkit-text-decoration: #001141;
-    text-decoration: #001141
+    color: var(--bs-link-hover-color);
+    -webkit-text-decoration: #6eb356;
+    text-decoration: #6eb356
 }
 
 a:not([href]):not([class]),
@@ -26016,7 +26015,7 @@ fieldset:disabled .btn {
 
 .bg-primary {
     --bs-bg-opacity: 1;
-    background-color: #001141 !important
+    background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important
 }
 
 .bg-accent {
@@ -48220,13 +48219,21 @@ blockquote::before {
 }
 
 .hero-6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     min-height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin-top: -50px;
 }
 
 @media(min-width: 768px) {
@@ -48266,7 +48273,7 @@ blockquote::before {
         inset-block-end: 0;
         inset-inline-start: 50%;
         inset-inline-end: 0;
-        background-image: url(/public/backend/assets/images/hero-6/home-6/hero-img.png);
+        background-image: url(../img/home-6/hero-img.png);
         background-size: contain;
         background-position: center bottom;
         background-repeat: no-repeat;
@@ -48923,12 +48930,11 @@ blockquote::before {
 }
 
 .section-cta {
-    background-image: src('../images/home-6/cta-bg.png');
+    background-image: url(../img/home-6/cta-bg.png);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat
 }
-
 
 .newsletter {
     max-width: 600px;

@@ -50,7 +50,7 @@ class CustomerController extends Controller
     {
 
         $categories = Category::with('products')->get();
-        return view('layouts.pages.cart_main', compact('categories'));
+        return view('layouts.pages.cart', compact('categories'));
     }
 
 
@@ -275,7 +275,7 @@ class CustomerController extends Controller
     public function CustomerAbout()
     {
         $categories = Category::with('products')->get();
-        return view('layouts.pages.about_main', compact('categories'));
+        return view('layouts.pages.about', compact('categories'));
     }
 
 
