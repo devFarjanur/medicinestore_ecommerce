@@ -322,18 +322,24 @@ class AdminController extends Controller
 
     public function GetCategories()
     {
-
-
         \Log::info('GetCategories method hit');
 
         $categories = Category::all();
         return response()->json($categories);
-
-        
-
     }
 
 
+    
+
+
+
+    public function GetProducts()
+    {
+        \Log::info('GetProducts method hit');
+
+        $products = Product::all();
+        return response()->json($products);
+    }
 
 
 

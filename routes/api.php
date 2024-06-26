@@ -22,3 +22,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 Route::get('/categories', [AdminController::class, 'GetCategories']);
+Route::get('/products', [AdminController::class, 'GetProducts']);
